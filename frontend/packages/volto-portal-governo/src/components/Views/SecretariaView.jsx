@@ -7,7 +7,8 @@ import RenderBlocks from '@plone/volto/components/theme/View/RenderBlocks';
 
 const SecretariaView = (props) => {
   const { content, location } = props;
-  const { telefone, email } = content;
+  const { telefone, email, endereco, complemento, estado, cidade, cep } =
+    content;
   const path = getBaseUrl(location?.pathname || '');
 
   return (
@@ -19,6 +20,12 @@ const SecretariaView = (props) => {
         </Container>
         <Container className="email">
           <span>E-mail</span>: <a href={`mailto:${email}`}>{email}</a>
+        </Container>
+        <Container className="endereco">
+          <span>Endereço</span>:{' '}
+          <span>
+            {endereco} {complemento} {estado} {cidade} {cep}
+          </span>
         </Container>
       </Container>
     </Container>

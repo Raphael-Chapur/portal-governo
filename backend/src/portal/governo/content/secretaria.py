@@ -19,6 +19,12 @@ class ISecretaria(model.Schema):
         ],
     )
 
+    model.fieldset(
+        "endereco",
+        _("Endereço"),
+        fields=["endereco", "complemento", "cidade", "estado", "cep"],
+    )
+
     email = Email(
         title=_("Email"),
         required=True,
@@ -31,6 +37,16 @@ class ISecretaria(model.Schema):
         required=False,
         constraint=validadores.is_valid_telefone,
     )
+
+    endereco = schema.TextLine(title=_("Endereço"), description=_("Endereço"))
+
+    complemento = schema.TextLine(title=_("Complemento"), description=_("Complemento"))
+
+    cidade = schema.TextLine(title=_("Cidade"), description=_("Cidade"))
+
+    estado = schema.TextLine(title=_("Estado"), description=_("Estado"))
+
+    cep = schema.TextLine(title=_("CEP"), description=_("CEP"))
 
 
 @implementer(ISecretaria)
