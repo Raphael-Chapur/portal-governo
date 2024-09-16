@@ -1,4 +1,4 @@
-from AccessControl.unauthorized import Unauthorized
+from AccessControl import Unauthorized
 from plone import api
 from plone.dexterity.fti import DexterityFTI
 from portal.governo.content.secretaria import Secretaria
@@ -24,6 +24,13 @@ def secretaria_payload() -> dict:
         "email": "gabinete@casacivil.rs.gov.br",
         "telefone": "(51) 3210.4193",
     }
+
+
+@pytest.fixture()
+def content(portal, secretaria_payload) -> Secretaria:
+    with api.env.adopt_roles(["Manager"]):
+        content = api.content.create(container=portal, **secretaria_payload)
+    return content
 
 
 class TestSecretaria:
@@ -78,3 +85,20 @@ class TestSecretaria:
             else:
                 with pytest.raises(Unauthorized):
                     api.content.create(container=self.portal, **secretaria_payload)
+
+    @pytest.mark.parametrize(
+        "role,allowed",
+        [
+            ["Manager", False],
+            ["Site Administrator", False],
+            ["Editor", False],
+            ["Contributor", False],
+        ],
+    )
+    def test_subscriber_remove_permission(self, content, role, allowed):
+        current_user = api.user.get_current()
+        with api.env.adopt_roles([role]):
+            can_add = api.user.has_permission(
+                "portal.governo: Add Secretaria", user=current_user, obj=content
+            )
+            assert can_add is allowed
