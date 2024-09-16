@@ -24,7 +24,7 @@ const SecretariaView = (props) => {
         <Container className="endereco">
           <span>Endereço</span>:{' '}
           <span>
-            {endereco} {complemento} {estado} {cidade} {cep}
+            {endereco} {complemento} {estado.title} {cidade} {cep}
           </span>
         </Container>
       </Container>
