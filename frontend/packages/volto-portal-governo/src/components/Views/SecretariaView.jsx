@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { getBaseUrl } from '@plone/volto/helpers';
 import { Container } from '@plone/components';
 import RenderBlocks from '@plone/volto/components/theme/View/RenderBlocks';
+//import '../../theme/_secretariaView.scss';
 
 const SecretariaView = (props) => {
   const { content, location } = props;
