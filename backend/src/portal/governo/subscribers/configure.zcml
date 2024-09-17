@@ -13,4 +13,18 @@
            zope.lifecycleevent.interfaces.IObjectModifiedEvent"
       handler=".secretaria.modified"
       />
+
+  <!-- Tipo Pessoa -->
+  <!-- Add -->
+  <subscriber
+      for="portal.governo.content.pessoa.IPessoa
+           zope.lifecycleevent.interfaces.IObjectAddedEvent"
+      handler=".pessoa.added"
+      />
+  <!-- Edit -->
+  <subscriber
+      for="portal.governo.content.pessoa.IPessoa
+           zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+      handler=".pessoa.modified"
+      />
 </configure>
