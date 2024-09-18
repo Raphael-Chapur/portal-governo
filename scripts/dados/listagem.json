@@ -1,0 +1,273 @@
+{
+  "@id": "http://localhost:8080/Plone/++api++/@search",
+  "items": [
+    {
+      "@id": "http://localhost:8080/Plone",
+      "@type": "Plone Site",
+      "Subject": [],
+      "description": "",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "",
+      "image_scales": null,
+      "review_state": null,
+      "title": "Project Title",
+      "type_title": "Site Plone"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/images",
+      "@type": "Document",
+      "Subject": [],
+      "description": "Site images",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "",
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Images",
+      "type_title": "P\u00e1gina"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/images/plone-foundation.png",
+      "@type": "Image",
+      "Subject": [
+        "Plone"
+      ],
+      "description": "",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "image",
+      "image_scales": {
+        "image": [
+          {
+            "content-type": "image/png",
+            "download": "@@images/image-2000-72b2988260704a832aff27ff4ffced3f.png",
+            "filename": "plone-foundation.png",
+            "height": 439,
+            "scales": {
+              "great": {
+                "download": "@@images/image-1200-9f6462ffaba0a54218bca1310a36cb02.png",
+                "height": 263,
+                "width": 1200
+              },
+              "huge": {
+                "download": "@@images/image-1600-0092afc950ab2840511aad2617f1b979.png",
+                "height": 351,
+                "width": 1600
+              },
+              "icon": {
+                "download": "@@images/image-32-1653129b17a88e55ed2a19f11c6a5401.png",
+                "height": 7,
+                "width": 32
+              },
+              "large": {
+                "download": "@@images/image-800-3b7df49d093011a84c44b0ef399aa148.png",
+                "height": 175,
+                "width": 800
+              },
+              "larger": {
+                "download": "@@images/image-1000-2bd5c3303de676418da63a9e99317e98.png",
+                "height": 219,
+                "width": 1000
+              },
+              "mini": {
+                "download": "@@images/image-200-491176535f22a8d5b77398e463d462b1.png",
+                "height": 43,
+                "width": 200
+              },
+              "preview": {
+                "download": "@@images/image-400-422ab0d11166f2901000c1513b6909c1.png",
+                "height": 87,
+                "width": 400
+              },
+              "teaser": {
+                "download": "@@images/image-600-94b2e54fc02b07ea4a30174a383b0eb5.png",
+                "height": 131,
+                "width": 600
+              },
+              "thumb": {
+                "download": "@@images/image-128-3ba1e5769196298cc2609cf388e245f4.png",
+                "height": 28,
+                "width": 128
+              },
+              "tile": {
+                "download": "@@images/image-64-33bd5f39d632bc8cdd4ddb7d730e6395.png",
+                "height": 14,
+                "width": 64
+              }
+            },
+            "size": 50737,
+            "width": 2000
+          }
+        ]
+      },
+      "review_state": null,
+      "title": "Plone Foundation Logo",
+      "type_title": "Imagem"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/jose",
+      "@type": "Pessoa",
+      "Subject": [],
+      "description": "",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "",
+      "image_scales": null,
+      "review_state": "private",
+      "title": "jose",
+      "type_title": "Pessoa"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/lala",
+      "@type": "Pessoa",
+      "Subject": [],
+      "description": "teste",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "image",
+      "image_scales": {
+        "image": [
+          {
+            "content-type": "image/jpeg",
+            "download": "@@images/image-1000-dcb0ed9a2a7214e91e4200858ef31303.jpeg",
+            "filename": "Largo_dos_a\u00e7orianos_2.jpg",
+            "height": 599,
+            "scales": {
+              "icon": {
+                "download": "@@images/image-32-5b4809a2c69b2f4cf5830e8659af69f2.jpeg",
+                "height": 19,
+                "width": 32
+              },
+              "large": {
+                "download": "@@images/image-800-b8d36693f51efaabd5084bd6f7ec5234.jpeg",
+                "height": 479,
+                "width": 800
+              },
+              "larger": {
+                "download": "@@images/image-1000-72289d943ee4a81f860a2aceb08b75c0.jpeg",
+                "height": 599,
+                "width": 1000
+              },
+              "mini": {
+                "download": "@@images/image-200-f4574c618db8b6137b507e5af6f90726.jpeg",
+                "height": 119,
+                "width": 200
+              },
+              "preview": {
+                "download": "@@images/image-400-3b834af59bc8920af81b72fdea5dc543.jpeg",
+                "height": 239,
+                "width": 400
+              },
+              "teaser": {
+                "download": "@@images/image-600-bceccb0f66cfbe5a8c708e8a1ddc5b3a.jpeg",
+                "height": 359,
+                "width": 600
+              },
+              "thumb": {
+                "download": "@@images/image-128-53805b2013e76d47f75c4f25f4994398.jpeg",
+                "height": 76,
+                "width": 128
+              },
+              "tile": {
+                "download": "@@images/image-64-07b46ddf518ee926976146270716bf14.jpeg",
+                "height": 38,
+                "width": 64
+              }
+            },
+            "size": 347340,
+            "width": 1000
+          }
+        ]
+      },
+      "review_state": "private",
+      "title": "Laila da Silva",
+      "type_title": "Pessoa"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/maria",
+      "@type": "Pessoa",
+      "Subject": [],
+      "description": "",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "",
+      "image_scales": null,
+      "review_state": "private",
+      "title": "maria",
+      "type_title": "Pessoa"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/maria-da-silva",
+      "@type": "Pessoa",
+      "Subject": [],
+      "description": "",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "",
+      "image_scales": null,
+      "review_state": "private",
+      "title": "Maria da Silva",
+      "type_title": "Pessoa"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/rapha",
+      "@type": "Pessoa",
+      "Subject": [],
+      "description": "pessoa raphael",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "image",
+      "image_scales": {
+        "image": [
+          {
+            "content-type": "image/jpeg",
+            "download": "@@images/image-1000-8c73031cb43b3ebdc335bba19194e46c.jpeg",
+            "filename": "Largo_dos_a\u00e7orianos_2.jpg",
+            "height": 599,
+            "scales": {
+              "icon": {
+                "download": "@@images/image-32-7507400759d86471518611cdd2fa6683.jpeg",
+                "height": 19,
+                "width": 32
+              },
+              "large": {
+                "download": "@@images/image-800-d25ac7eaa1cc2b14b4b9171d84e62121.jpeg",
+                "height": 479,
+                "width": 800
+              },
+              "larger": {
+                "download": "@@images/image-1000-3d0a1c380767d766d67f6f362bfbea3c.jpeg",
+                "height": 599,
+                "width": 1000
+              },
+              "mini": {
+                "download": "@@images/image-200-ac12ebb03b236a2b451d123191dccdb8.jpeg",
+                "height": 119,
+                "width": 200
+              },
+              "preview": {
+                "download": "@@images/image-400-df01eb73f76fd8406924a10094eea1e9.jpeg",
+                "height": 239,
+                "width": 400
+              },
+              "teaser": {
+                "download": "@@images/image-600-b8f4a1847d1c4ee981f5923b20bb3989.jpeg",
+                "height": 359,
+                "width": 600
+              },
+              "thumb": {
+                "download": "@@images/image-128-3e5d83666a74b913101035d1113986b5.jpeg",
+                "height": 76,
+                "width": 128
+              },
+              "tile": {
+                "download": "@@images/image-64-acb8a621e24e9e432c5efa4a91b1241f.jpeg",
+                "height": 38,
+                "width": 64
+              }
+            },
+            "size": 347340,
+            "width": 1000
+          }
+        ]
+      },
+      "review_state": "private",
+      "title": "Raphael",
+      "type_title": "Pessoa"
+    }
+  ],
+  "items_total": 8
+}
