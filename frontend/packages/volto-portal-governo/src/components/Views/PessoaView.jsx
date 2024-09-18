@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container } from '@plone/components';
 import { Image } from '@plone/volto/components';
-import Contato from './Contato/Contato';
-import Endereco from './Endereco/Endereco';
+import Contato from '../Contato/Contato';
+import Endereco from '../Endereco/Endereco';
 
 const PessoaView = (props) => {
   const { content } = props;
