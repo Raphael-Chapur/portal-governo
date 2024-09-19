@@ -2,11 +2,9 @@ import React from 'react';
 import { BlockDataForm } from '@plone/volto/components';
 import { secretariasSchema } from './schema';
 import { useIntl } from 'react-intl';
-
 const SecretariasBlockData = (props) => {
   const { data, block, onChangeBlock, blocksConfig, navRoot, contentType } =
     props;
-
   const intl = useIntl();
   const schema = secretariasSchema({ ...props, intl });
   const onChangeField = (id, value) => {
@@ -15,7 +13,6 @@ const SecretariasBlockData = (props) => {
       [id]: value,
     });
   };
-
   return (
     <BlockDataForm
       schema={schema}
@@ -30,5 +27,4 @@ const SecretariasBlockData = (props) => {
     />
   );
 };
-
 export default SecretariasBlockData;

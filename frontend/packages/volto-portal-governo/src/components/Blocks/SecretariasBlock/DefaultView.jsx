@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container } from '@plone/components';
-
 const SecretariasView = (props) => {
   const { headline, className } = props;
   return (
@@ -10,7 +9,6 @@ const SecretariasView = (props) => {
     </Container>
   );
 };
-
 /**
  * Property types.
  * @property {Object} propTypes Property types.
@@ -19,7 +17,6 @@ const SecretariasView = (props) => {
 SecretariasView.propTypes = {
   headline: PropTypes.string,
 };
-
 /**
  * Default properties.
  * @property {Object} defaultProps Default properties.
@@ -28,5 +25,4 @@ SecretariasView.propTypes = {
 SecretariasView.defaultProps = {
   headline: 'Secretarias',
 };
-
 export default SecretariasView;

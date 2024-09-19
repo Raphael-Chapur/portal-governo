@@ -1,10 +1,8 @@
 import React from 'react';
 import { withBlockExtensions } from '@plone/volto/helpers';
 import { SidebarPortal } from '@plone/volto/components';
-
 import SecretariasBlockData from './Data';
 import SecretariasBlockView from './View';
-
 const SecretariasBlockEdit = (props) => {
   const { data, onChangeBlock, block, selected } = props;
   return (
@@ -20,5 +18,4 @@ const SecretariasBlockEdit = (props) => {
     </>
   );
 };
-
 export default withBlockExtensions(SecretariasBlockEdit);

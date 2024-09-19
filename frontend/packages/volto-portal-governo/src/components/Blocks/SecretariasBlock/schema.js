@@ -1,5 +1,4 @@
 import { defineMessages } from 'react-intl';
-
 const messages = defineMessages({
   title: {
     id: 'Secretarias',
@@ -10,7 +9,6 @@ const messages = defineMessages({
     defaultMessage: 'Cabeçalho',
   },
 });
-
 export const secretariasSchema = (props) => {
   return {
     title: props.intl.formatMessage(messages.title),

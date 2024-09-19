@@ -8,7 +8,6 @@ import gestorSVG from '@plone/volto/icons/user.svg';
 import SecretariasBlockEdit from './components/Blocks/SecretariasBlock/Edit';
 import SecretariasBlockView from './components/Blocks/SecretariasBlock/View';
 import secretariaSVG from '@plone/volto/icons/home.svg';
-
 // Views
 import PessoaView from './components/Views/PessoaView';
 import SecretariaView from './components/Views/SecretariaView';
