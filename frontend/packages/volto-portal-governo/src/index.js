@@ -1,6 +1,5 @@
-//blocos
-
-//gestor
+// Blocos
+/// Gestor
 import GestorEdit from './components/Blocks/GestorBlock/Edit';
 import GestorView from './components/Blocks/GestorBlock/View';
 import gestorSVG from '@plone/volto/icons/user.svg';
@@ -23,14 +22,24 @@ const applyConfig = (config) => {
     Pessoa: PessoaView,
     Secretaria: SecretariaView,
   };
+
+  // Blocos
+  /// Grupos de Blocos
+  config.blocks.groupBlocksOrder = [
+    ...config.blocks.groupBlocksOrder,
+    { id: 'procergs', title: 'Procergs' },
+  ];
+  /// Bloco Gestor
   config.blocks.blocksConfig.gestorBlock = {
     id: 'gestorBlock',
     title: 'Gestor',
-    group: 'common',
+    group: 'procergs',
     icon: gestorSVG,
     edit: GestorEdit,
     view: GestorView,
+    sidebarTab: 1,
   };
+
   return config;
 };
 

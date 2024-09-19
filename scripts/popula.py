@@ -41,7 +41,9 @@ CONTEUDOS = {
         "id": "cultura",
         "@type": "Secretaria",
         "title": "Secretaria de Cultura",
-     
+        "description": "Secretaria de Cultura do Estado do Rio Grande do Sul",
+        "telefone": "5132885400",
+        "email": "gabinete@rs.gov.br",
     },
     "/cultura/beatriz-araujo": {
         "id": "beatriz-araujo",
